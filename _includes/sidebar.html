@@ -1,4 +1,4 @@
-<div class="sidebar">
+<!-- <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
@@ -10,13 +10,38 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.index == 'home' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
-<a class="sidebar-nav-item{% if page.index == 'testPage1' %} active{% endif %}" href="{{ '/testPage1' | relative_url }}">testPage1</a>
-      <a class="sidebar-nav-item{% if page.index == 'archives' %} active{% endif %}" href="{{ '/archives' | relative_url }}">Archives</a>
-      <a class="sidebar-nav-item{% if page.index == 'about' %} active{% endif %}" href="{{ '/about' | relative_url }}">About</a>
+      <a class="sidebar-nav-item{% if page.index == 'home' %} active{% endif %}"
+        href="{{ '/' | relative_url }}">Home</a>
+      <a class="sidebar-nav-item{% if page.index == 'testPage1' %} active{% endif %}"
+        href="{{ '/testPage1' | relative_url }}">testPage1</a>
+      <a class="sidebar-nav-item{% if page.index == 'archives' %} active{% endif %}"
+        href="{{ '/archives' | relative_url }}">Archives</a>
+      <a class="sidebar-nav-item{% if page.index == 'about' %} active{% endif %}"
+        href="{{ '/about' | relative_url }}">About</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub</a>
     </nav>
 
     <p class="copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
-</div>
+</div> -->
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{ '/' | relative_url }}">Joyce Nav Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link sidebar-nav-item{% if page.index == 'home' %} active{% endif %}"
+        href="{{ '/' | relative_url }}">Home</a>
+      <a class="nav-item nav-link sidebar-nav-item{% if page.index == 'archives' %} active{% endif %}"
+        href="{{ '/archives' | relative_url }}">Web Design (archives)</a>
+      <a class="nav-item nav-link sidebar-nav-item{% if page.index == 'about' %} active{% endif %}"
+        href="{{ '/about' | relative_url }}">About</a>
+    </div>
+  </div>
+</nav>
